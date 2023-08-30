@@ -1,0 +1,2 @@
+Número      Nome           Quantidade de Jogadas
+1           João           27                   
