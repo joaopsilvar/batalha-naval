@@ -1,2 +1,3 @@
-Número      Nome           Quantidade de Jogadas
-1           João           27                   
+N�mero      Nome           Quantidade de Jogadas
+1           João          27                   
+2           Luis           27                   

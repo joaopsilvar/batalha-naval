@@ -52,11 +52,11 @@ class FrontEnd:
             exibicao.imprimirTabuleiro(tabuleiro)
             exibicao.imprimirDadosJogo(tabuleiro)
 
-            count = exibicao.getNaviosSubmarinosEncontrados()
-            if count == tabuleiro.getQtdeNaviosSubmarinos():
+            count = exibicao.navios_encontrados + exibicao.submarinos_encontrados
+            if count == tabuleiro.navios + tabuleiro.submarinos:
               print('\n\u002A\u002A\u002A\u002A\u002A Parabéns! Você Ganhou!!!!! \u002A\u002A\u002A\u002A\u002A\n')
               nome_ganhador = input('Informe seu nome:')
-              contador_jogadas = exibicao.getContadorJogadas()
+              contador_jogadas = exibicao.contador_jogadas
               score = PersistenciaScores()
               score.registrarPontuacao(nome_ganhador,contador_jogadas)
               exibicao.imprimirPontuacoes()

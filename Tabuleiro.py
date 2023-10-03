@@ -16,30 +16,6 @@ class Tabuleiro:
     self.submarinos_eliminados = {}
     self.submarinos_parcialmente_atingido = {}
     self.navios_eliminados = {}
-
-  def getLinhasTabuleiro(self):
-    return self.linhas
-
-  def getColunasTabuleiro(self):
-    return self.colunas
-
-  def getNaviosTabuleiro(self):
-    return self.navios
-
-  def getSubmarinosTabuleiro(self):
-    return self.submarinos  
-  
-  def getPosicaoNavios(self):
-    return self.posicao_navios
-
-  def getPosicaoSubmarinos(self):
-    return self.posicao_submarinos
-
-  def getTabuleiro(self):
-    return self.tabuleiro
-
-  def getQtdeNaviosSubmarinos(self):
-    return self.navios + self.submarinos
   
   def gerarPosicoesSubmarinos(self):
     for i in range(self.submarinos):
